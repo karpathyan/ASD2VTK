@@ -8,7 +8,7 @@ Author: Rajgowrav Cheenikundil, Orebro University.
 
 
 
-ASD2VTK is a Python script that enables easy conversion of Atomistic Spin Dynamics (ASD) simulation data from UppASD simulations to Visualization Toolkit (VTK) files. VTK files are commonly used for data visualization in various software, such as Paraview. This tool simplifies the process of generating VTK files, allowing users to visualize atomistic simulation results efficiently.
+ASD2VTK is a Python script that enables easy conversion of Atomistic Spin Dynamics (ASD) simulation data from UppASD simulations to Visualization Toolkit (VTK) files, for visualization in software such as ParaView. This tool simplifies the process of generating VTK files, allowing users to visualize atomistic simulation results efficiently.
 
 ## Features
 - Converts UppASD simulation outputs (coord.*.out and restart.*.out) to VTK files.
