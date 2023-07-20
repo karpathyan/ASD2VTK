@@ -25,9 +25,9 @@ ASD2VTK is a Python script that enables easy conversion of Atomistic Spin Dynami
 2. Run the Python script "ASD2VTK.py" in the directory containing the aforementioned simulation outputs.                        
           (```python ASD2VTK.py```)
 3. The script will generate a VTU file named "outfile_ASD.vtu" in the same directory.
-4. Open the `outfile_ASD.vtu` with Paraview
+4. Open the `outfile_ASD.vtu` with Paraview and click on "Apply"
 5. In ParaView, chose `Cell_Magnetization` as the visualization field
-6. If you want to plot the magnetization with arrows, chose the "Glyph" tool in Paraview, chose `Cell_Magnetization` as the orientation array.
+6. If you want to plot the magnetization with arrows, chose the "Glyph" tool in Paraview, and chose `Cell_Magnetization` as the orientation array.
 
 ( The outputs written using version 1.0 of  ASD2VTK.py are tested and working/opening without errors on Paraview version 5.11.0 on Ubuntu  version 23  )
 
