@@ -2,7 +2,7 @@
 ASD2VTK version 1.0
 Rajgowrav Cheenikundil, Orebro University, Sweden. 
 
-( visit https://github.com/karpathyan/ASD2VTK/ for instructions and help )  
+(visit https://github.com/karpathyan/ASD2VTK/ for instructions and help )  
 
 License: GNU Affero General Public License version 3.0 (GNU AGPLv3)
 SPDX-License-Identifier: AGPL-3.0
