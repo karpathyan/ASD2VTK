@@ -17,8 +17,12 @@ ASD2VTK is a Python script that enables easy conversion of Atomistic Simulation 
 1. Ensure that the UppASD simulation outputs, "coord.*.out" and "restart.*.out," are in the same directory as the script.
 2. Run the Python script "ASD2VTK.py" in the directory containing the aforementioned simulation outputs.                        
           (```python ASD2VTK.py```)
-3. The script will generate a VTU file named "ASD_out.vtu" in the same directory.
-4. Use Paraview to visualize the output files.
+3. The script will generate a VTU file named "outfile_ASD.vtu" in the same directory.
+4. Open the `outfile_ASD.vtu` with Paraview
+5. In ParaView, chose `Cell_Magnetization` as the visualization field
+6. If you want to plot the magnetization with arrows, chose the "Glyph" tool in Paraview, chose `Cell_Magnetization` as the orientation array.
+
+( The outputs written using version 1.0 of  ASD2VTK.py are tested and working/opening without errors on Paraview version 5.11.0 on Ubuntu  version 23  )
 
 **Note:**
 - Make sure that there is only one "coord.*.out" and one "restart.*.out" file in the running directory.
