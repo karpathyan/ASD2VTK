@@ -32,6 +32,6 @@ Contributions to improve ASD2VTK are welcome! Feel free to open issues, suggest 
 ASD2VTK is released under the GNU Affero General Public License version 3.0 (GNU AGPLv3). Please see the `LICENSE` file for more details.
 
 ## Disclaimer
-This software is provided as-is and comes with no warranty. The authors are not responsible for any potential damage or incorrect visualization results when using this tool. Users should carefully review their data and verify the correctness of the generated VTK files.
+This software is provided as-is and comes with no warranty. 
 
 ---
