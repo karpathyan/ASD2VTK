@@ -13,12 +13,12 @@ ASD2VTK is a Python script that enables easy conversion of Atomistic Simulation 
 ## Features
 - Converts UppASD simulation outputs (coord.*.out and restart.*.out) to VTK files.
 - Automatically reads the data from the restart file and creates a VTU (UnstructuredGrid) file.
-- Ensures proper arrangement of data points and vectors for correct visualization in Paraview.
-- Supports Atomistic Simulation Data with magnetic properties for enhanced visualizations.
+
 
 ## Requirements
 - Python 3.x
 - VTK library (`pip install vtk --user`)
+- ParaView installed for visualization 
 
 ## Usage
 1. Ensure that the UppASD simulation outputs, "coord.*.out" and "restart.*.out," are in the same directory as the script.
