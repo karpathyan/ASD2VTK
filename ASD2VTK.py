@@ -1,5 +1,6 @@
 """
 ASD2VTK version 1.0
+visit https://github.com/karpathyan/ASD2VTK/ for instructions and help.
 Rajgowrav Cheenikundil,
 Orebro University,
 License: GNU Affero General Public License version 3.0 (GNU AGPLv3)
@@ -44,7 +45,7 @@ def get8pnts(pp):
 
 print (":::.:::.:::.:::.:::\n")
 print ("ASD2VTK version 1.0  ")
-print ("https://github.com/karpathyan/ASD2VTK/\n")
+print (" visit https://github.com/karpathyan/ASD2VTK/ for instructions and help\n")
 print (":::.:::.:::.:::.:::\n")
 try:
     coord_file_name = glob.glob("coord.*.out")[0]
