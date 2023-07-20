@@ -1,6 +1,6 @@
 
 # ASD2VTK - Atomistic Simulation Data to VTK Converter
-<img src="./Logo.png" alt="Logo" width="150" height="150">
+<img src="./images/Logo.png" alt="Logo" width="150" height="150">
 
 
 Author: Rajgowrav Cheenikundil, Orebro University.

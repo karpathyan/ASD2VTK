@@ -44,7 +44,7 @@ def get8pnts(pp):
 
 print (":::.:::.:::.:::.:::\n")
 print ("ASD2VTK version 1.0  ")
-print (" visit https://github.com/karpathyan/ASD2VTK/ for instructions and help\n")
+print ("visit https://github.com/karpathyan/ASD2VTK/ for instructions and help\n")
 print (":::.:::.:::.:::.:::\n")
 try:
     coord_file_name = glob.glob("coord.*.out")[0]
