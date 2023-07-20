@@ -9,17 +9,16 @@ ASD2VTK is a Python script that enables easy conversion of Atomistic Simulation 
 - Ensures proper arrangement of data points and vectors for correct visualization in Paraview.
 - Supports Atomistic Simulation Data with magnetic properties for enhanced visualizations.
 
-## License
-ASD2VTK is licensed under the GNU Affero General Public License version 3.0 (GNU AGPLv3). This means that you are free to use, modify, and distribute the software under certain conditions. Please see the `LICENSE` file for more details.
-
 ## Requirements
 - Python 3.x
-- VTK library
+- VTK library (`pip install vtk --user`)
 
 ## Usage
 1. Ensure that the UppASD simulation outputs, "coord.*.out" and "restart.*.out," are in the same directory as the script.
-2. Run the Python script "ASD2VTK.py" in the directory containing the aforementioned simulation outputs.
+2. Run the Python script "ASD2VTK.py" in the directory containing the aforementioned simulation outputs.                        
+          (```python ASD2VTK.py```)
 3. The script will generate a VTU file named "ASD_out.vtu" in the same directory.
+4. Use Paraview to visualize the output files.
 
 **Note:**
 - Make sure that there is only one "coord.*.out" and one "restart.*.out" file in the running directory.
