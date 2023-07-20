@@ -2,7 +2,7 @@
 ASD2VTK version 1.0
 Rajgowrav Cheenikundil,
 Orebro University,
-Licence: GNU Affero General Public License version 3.0 (GNU AGPLv3)
+License: GNU Affero General Public License version 3.0 (GNU AGPLv3)
 SPDX-License-Identifier: AGPL-3.0
 
 You should have received a copy of the GNU Affero General Public License
@@ -121,7 +121,7 @@ for i,ln in enumerate(mag_file):
 my_vtk_dataset.GetCellData().AddArray(cell_vectors)
 
 writer = vtk.vtkXMLUnstructuredGridWriter()
-my_filename = "ASD_out.vtu"
+my_filename = "outfile_ASD.vtu"
 writer.SetFileName(my_filename)
 writer.SetInputData(my_vtk_dataset)
 writer.Write()
