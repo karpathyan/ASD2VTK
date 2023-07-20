@@ -5,6 +5,9 @@ Orebro University,
 Licence: GNU Affero General Public License version 3.0 (GNU AGPLv3)
 SPDX-License-Identifier: AGPL-3.0
 
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/agpl-3.0.html>
+
 written: 20/06/2023
 
 * Python script to read the data from the restart
@@ -40,7 +43,8 @@ def get8pnts(pp):
 #restart_file_name = glob.glob("restart.*.out")[0]
 
 print (":::.:::.:::.:::.:::\n")
-print ("ASD2VTK version 1.0  \n")
+print ("ASD2VTK version 1.0  ")
+print ("https://github.com/karpathyan/ASD2VTK/\n")
 print (":::.:::.:::.:::.:::\n")
 try:
     coord_file_name = glob.glob("coord.*.out")[0]
