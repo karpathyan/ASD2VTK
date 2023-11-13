@@ -24,8 +24,11 @@ ASD2VTK is a Python script that enables easy conversion of Atomistic Spin Dynami
 1. Ensure that the UppASD simulation outputs, "coord.*.out" and "restart.*.out," "moment.*.output" etc are in the same directory as the script.
 2. Run the Python script "ASD2VTK.py" followed by the input file name and the tool-name in the directory containing the aforementioned simulation outputs.               
    ```python ASD2VTK.py inputfile source-tool-name```
-    example
+
+   example
+   
    ``` python ASD2VTK.py moment.bcc_Fe.out uppasd```
+   
    deffault is restart.*.out and UppASD
 4. The script will generate a VTU file named "v_*.vtu" in the same directory.
 5. Open the output file with Paraview and click on "Apply"
