@@ -41,11 +41,17 @@ ASD2VTK is a Python script that enables easy conversion of Atomistic Spin Dynami
 - Make sure that there is only one "coord.*.out" and one "restart.*.out" file in the running directory.
 - The number of points in the VTU file will be 8 times the number of atoms, as 8 points are needed for each cube.
 
+
+## Acknowledging
+Please share and cite this repository if you find this tool useful.
+
 ## Contributing
 Contributions to improve ASD2VTK are welcome! Feel free to open issues, suggest enhancements, or submit pull requests. Let's collaborate and make this tool even better.
 
 ## License
 ASD2VTK is released under the GNU Affero General Public License version 3.0 (GNU AGPLv3). Please see the `LICENSE` file for more details.
+
+
 
 ## Disclaimer
 This software is provided as-is and comes with no warranty. 
