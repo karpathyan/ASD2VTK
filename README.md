@@ -12,7 +12,7 @@ ASD2VTK is a Python script that enables easy conversion of Atomistic Spin Dynami
 
 ## Features
 - Converts UppASD simulation outputs (coord.*.out and restart.*.out) to VTK files.
-- Automatically reads the data from the restart file and creates a VTU (UnstructuredGrid) file.
+
 
 
 ## Requirements
@@ -21,13 +21,16 @@ ASD2VTK is a Python script that enables easy conversion of Atomistic Spin Dynami
 - ParaView installed for visualization 
 
 ## Usage
-1. Ensure that the UppASD simulation outputs, "coord.*.out" and "restart.*.out," are in the same directory as the script.
-2. Run the Python script "ASD2VTK.py" in the directory containing the aforementioned simulation outputs.                        
-          (```python ASD2VTK.py```)
-3. The script will generate a VTU file named "outfile_ASD.vtu" in the same directory.
-4. Open the `outfile_ASD.vtu` with Paraview and click on "Apply"
-5. In ParaView, chose `Cell_Magnetization` as the visualization field
-6. If you want to plot the magnetization with arrows, chose the "Glyph" tool in Paraview, and chose `Cell_Magnetization` as the orientation array.
+1. Ensure that the UppASD simulation outputs, "coord.*.out" and "restart.*.out," "moment.*.output" etc are in the same directory as the script.
+2. Run the Python script "ASD2VTK.py" followed by the input file name and the tool-name in the directory containing the aforementioned simulation outputs.               
+          (```python ASD2VTK.py inputfile source-tool-name```)
+          example
+          (``` python ASD2VTK.py moment.bcc_Fe.out uppasd```)
+          deffault is restart.*.out and UppASD
+4. The script will generate a VTU file named "v_*.vtu" in the same directory.
+5. Open the output file with Paraview and click on "Apply"
+6. In ParaView, choose `Cell_vector_3D` as the visualization field
+7. If you want to plot the magnetization with arrows, choose the "Glyph" tool in Paraview, and choose `Cell_Vector_3D` as the orientation array.
 
 ( The outputs written using version 1.0 of  ASD2VTK.py are tested and working/opening without errors on Paraview version 5.11.0 on Ubuntu  version 23  )
 
