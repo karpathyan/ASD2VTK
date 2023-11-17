@@ -275,16 +275,17 @@ def process_chunk(cord_data, field_data_chunk, out_filename):
 
 if __name__ == '__main__':
     print (":::.:::.:::.:::.:::\n")
-    print ("ASD2VTK version 2.0  (13/Nov/2023) ")
+    print ("ASD2VTK version 3.0  (17/Nov/2023) ")
     print ("Supported file-types: UppASD, ")
-    print ("visit https://github.com/karpathyan/ASD2VTK/ for instructions and help.\n")
+    print ("visit https://github.com/karpathyan/ASD2VTK/ for instructions and help.")
+    print ("Rajgowrav Cheenikundil, Orebro University, Sweden.\n ")
     print (":::.:::.:::.:::.:::\n")
 
     inp_filename, source_tool = get_args_pos()
     print ("chosen file type: ", source_tool)
     print ("reading data from file: ", inp_filename )
     if check_file(inp_filename):
-        print ("success.")
+        print ("success.\n")
         print (":::.:::.:::.:::.:::\n")
     else: 
         print("")
