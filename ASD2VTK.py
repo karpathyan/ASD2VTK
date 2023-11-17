@@ -33,12 +33,17 @@ Version 2.0 : 13/Nov/2023
  example $ python ASD2VTK.py moment.fcc.out uppasd
 
 * Made the code more flexible for improvements 
+
+version 3.0: 17/Nov/2023
+* Introduced parallel process, the code is 5 times faster now.
 """
 
 
 import vtk, glob
 import numpy as np
 import argparse, os
+from multiprocessing import Pool
+import time as tm
 
 dx = 0.5
 dy = 0.5
@@ -264,6 +269,10 @@ def check_file(file_path):
     else:
         return False
 
+def process_chunk(cord_data, field_data_chunk, out_filename):
+    """Process a single chunk of data."""
+    write_vtu_vector(cord_data=cord_data, field_data=field_data_chunk, out_filename=out_filename)
+
 if __name__ == '__main__':
     print (":::.:::.:::.:::.:::\n")
     print ("ASD2VTK version 2.0  (13/Nov/2023) ")
@@ -306,12 +315,17 @@ if __name__ == '__main__':
 
     vec_data_chunks = np.array_split(vec_data, numb_time_steps)
 
-    indx = 0
-    for tstep in range (numb_time_steps):
-        fname = out_name+str(indx)+".vtu"
-        write_vtu_vector(cord_data=cord_data, field_data=vec_data_chunks[tstep], 
-                             out_filename= fname)
-        indx +=1
-         
+    tasks = []
 
+    for indx, field_data_chunk in enumerate(vec_data_chunks):
+        fname = f"v_{ftype_name}_{indx}.vtu"
+        tasks.append((cord_data, field_data_chunk, fname))
 
+    t0 = tm.time()
+    # Using multiprocessing to process chunks in parallel
+    with Pool() as pool:
+        pool.starmap(process_chunk, tasks)
+    t1 = tm.time()
+    print ("total time = ", round(t1-t0, 3), "seconds")
+
+    
