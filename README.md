@@ -45,6 +45,16 @@ ASD2VTK is a Python script that enables easy conversion of Atomistic Spin Dynami
 ## Acknowledging
 Please share and cite this repository if you find this tool useful.
 
+```
+@misc{ASD2VTK,
+  title = {{ASD2VTK}},
+  howpublished = {\url{https://github.com/karpathyan/ASD2VTK}},
+  author = {Rajgowrav Cheenikundil},
+  year = {2024},
+  note = {Accessed on: Date of access},
+}
+```
+
 ## Contributing
 Contributions to improve ASD2VTK are welcome! Feel free to open issues, suggest enhancements, or submit pull requests. Let's collaborate and make this tool even better.
 
