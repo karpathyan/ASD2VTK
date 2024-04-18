@@ -1,6 +1,6 @@
 
 # ASD2VTK - Atomistic Spin Dynamics simulation data to VTK Converter
-<img src="./images/Logo.png" alt="Logo" width="150" height="150"> <img src="./images/ExB_setup-AFM_coupled.png" alt="nice_image" width="150" height="150">
+<img src="./images/Logo.png" alt="Logo" width="192" height="108"> <img src="./images/ExB_setup-AFM_coupled.png" alt="nice_image" width="150" height="150">
 
 
 Author: Rajgowrav Cheenikundil, Orebro University.
